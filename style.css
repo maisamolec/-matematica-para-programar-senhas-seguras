@@ -1,0 +1,209 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #100c25, #211344);
+    color: white;
+    min-height: 100vh;
+}
+
+/* CABEÇALHO */
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    color: #a78bfa;
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+header p {
+    color: #c4b5fd;
+}
+
+/* CONTAINER */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* CARTÃO DO GERADOR */
+
+.gerador {
+    background: #1e1935;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid #44336c;
+    box-shadow: 0 10px 35px #00000050;
+}
+
+.gerador h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.descricao {
+    color: #aaa1c7;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* CAMPO DE SENHA */
+
+.campo-senha {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.campo-senha input {
+    width: 100%;
+    min-width: 0;
+    padding: 13px;
+    background: #100c25;
+    color: #a78bfa;
+    border: 1px solid #6246a5;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#copiar {
+    background: #6246a5;
+    color: white;
+    padding: 12px;
+}
+
+button:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+/* FORÇA DA SENHA */
+
+.forca {
+    margin-bottom: 25px;
+}
+
+.forca p {
+    display: inline-block;
+}
+
+#nivel {
+    color: #a78bfa;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.barra {
+    height: 8px;
+    background: #39304f;
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+#progresso {
+    width: 0%;
+    height: 100%;
+    background: #22c55e;
+    transition: 0.3s;
+}
+
+/* CONFIGURAÇÕES */
+
+.configuracoes {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.configuracoes h3 {
+    margin-top: 10px;
+    color: #c4b5fd;
+}
+
+.configuracoes label {
+    color: #ddd6fe;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    accent-color: #8b5cf6;
+    margin-right: 8px;
+}
+
+input[type="range"] {
+    width: 100%;
+    accent-color: #8b5cf6;
+    cursor: pointer;
+}
+
+/* BOTÃO GERAR */
+
+.botao-gerar {
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    background: linear-gradient(90deg, #7c3aed, #a855f7);
+    color: white;
+    font-size: 16px;
+}
+
+#mensagem {
+    text-align: center;
+    margin-top: 15px;
+    color: #a78bfa;
+    min-height: 20px;
+}
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+    padding: 30px 15px;
+    color: #aaa1c7;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .gerador {
+        padding: 22px;
+    }
+
+    .campo-senha {
+        flex-direction: column;
+    }
+
+    #copiar {
+        padding: 12px;
+    }
+}

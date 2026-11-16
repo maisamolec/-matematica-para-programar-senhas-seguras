@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecurePass - Gerador de Senhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🔐 SecurePass</h1>
+        <p>Crie senhas fortes e proteja sua segurança digital.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="gerador">
+            <h2>Gerador de Senhas</h2>
+
+            <p class="descricao">
+                Gere uma senha segura e personalizada.
+            </p>
+
+            <div class="campo-senha">
+                <input
+                    type="text"
+                    id="senha"
+                    placeholder="Sua senha aparecerá aqui"
+                    readonly
+                >
+
+                <button id="copiar">Copiar</button>
+            </div>
+
+            <div class="forca">
+                <p>Força da senha:</p>
+                <span id="nivel">Nenhuma</span>
+                <div class="barra">
+                    <div id="progresso"></div>
+                </div>
+            </div>
+
+            <div class="configuracoes">
+
+                <label for="tamanho">
+                    Tamanho da senha:
+                    <span id="valorTamanho">12</span>
+                </label>
+
+                <input
+                    type="range"
+                    id="tamanho"
+                    min="4"
+                    max="32"
+                    value="12"
+                >
+
+                <h3>Tipos de caracteres</h3>
+
+                <label>
+                    <input type="checkbox" id="maiusculas" checked>
+                    Letras maiúsculas (A-Z)
+                </label>
+
+                <label>
+                    <input type="checkbox" id="minusculas" checked>
+                    Letras minúsculas (a-z)
+                </label>
+
+                <label>
+                    <input type="checkbox" id="numeros" checked>
+                    Números (0-9)
+                </label>
+
+                <label>
+                    <input type="checkbox" id="simbolos" checked>
+                    Símbolos (!@#$%)
+                </label>
+
+            </div>
+
+            <button id="gerar" class="botao-gerar">
+                Gerar senha
+            </button>
+
+            <p id="mensagem"></p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>SecurePass © 2026 | Projeto de Portfólio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
